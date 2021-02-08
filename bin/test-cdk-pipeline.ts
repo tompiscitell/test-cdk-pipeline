@@ -42,7 +42,7 @@ class TestCdkPipelineStack extends cdk.Stack {
       })
     })
 
-    pipeline.addApplicationStage(new TestStage(this, 'Test', { env: { account: '111111111111', region: 'us-west-2' }}))
+    pipeline.addApplicationStage(new TestStage(this, 'Test', { env: { account: '111111111111', region: 'us-east-1' }}))
   }
 }
 
